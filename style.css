@@ -47,6 +47,7 @@ body {
     top: 50%;
 	width: 100%;
 	transform: translate(0, -50%);
+	cursor: pointer;
 }
 .arrowBlock .left{
 	position: absolute;
@@ -174,4 +175,10 @@ textarea:focus  {
 
 .inputUserDetails {
 	background: rgb(217, 217, 217);
+}
+.active {
+	display: block;
+}
+.inactive {
+	display: none;
 }
