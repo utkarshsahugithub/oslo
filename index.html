@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+	<!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+	<title>Clone</title>
+	<!-- custom css -->
+	<link rel="stylesheet" href="style.css">
+	<!-- fontawesome cdn -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+	></script>
+	<!-- header -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light text-white bg-light">
+			<a class="navbar-brand logo" href="#">Oslo</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav ml-auto">
+				<a class="nav-link text-dark" href="#aboutUs">ABOUT US</a>
+				<a class="nav-link text-dark" href="#features">FEATURES</a>
+				<a class="nav-link text-dark" href="#dashboard">DASHBOARD</a>
+				<a class="nav-link text-dark" href="#reviews">REVIEWS</a>
+				<a  class="btn nav-link mw-50 signUpButton rounded-pill text-white px-5 font-weight-bold">Sign Up</a>
+			</div>
+			</div>
+		</nav>
+	</header>
+	<!--end of header  -->
+	<!-- banner -->
+	<div class="jumbotron-fluid text-white banner1">
+		<div class="carousel">
+			<div class="slide1"><img src="./assets/images/bannerImage1.jpg" class="active" alt=""></div>
+			<div class="slide2"><img src="./assets/images/bannerImage2.jpg" class="" alt=""></div>
+			<div class="slide3"><img src="./assets/images/bannerImage3.jpeg" class="" alt=""></div>
+			<div class="slide4"><img src="./assets/images/bannerImage4.jpeg" class="" alt=""></div>
+			<div class="slide5"><img src="./assets/images/bannerImage5.jpeg" class="" alt=""></div>
+		</div>
+		<div class="arrowBlock">
+			<i class="fas fa-chevron-left left"></i>
+            <i class="fas fa-chevron-right right"></i>
+		</div>
+		<div class="circlePagination">
+            <i class="fas fa-circle firstCircle"></i>
+			<i class="fas fa-circle secondCircle"></i>
+			<i class="fas fa-circle thirdCircle"></i>
+		</div>
+		<!-- <div class="container">
+		  <h1 class="display-4">Unleash your potential</h1>
+		  <p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+		  </p>
+		  <button type="button" class="btn rounded-pill learnMoreButton lead mb-3">Learn More</button>
+		</div> -->
+	</div>
+	<!-- end of banner -->
+	<!-- about us -->
+	<div class="container-fluid my-5" id="aboutUs">
+		<h5 class="text-center mb-2">About <span class="us">US</span></h5>
+		<div class="row mx-auto">
+		  <div class="col-12 col-md-6 mx-auto" style="padding: 0 50px;">
+			<h1 class="text-center text-md-left heading">We all want our jobs to run smoothly</h1>
+			<p class="para">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+			</p>
+			<div class="text-center text-md-left mb-5 mb-md-0">
+				<button type="button" class="btn text-white rounded-pill getStartedButton">Get Started</button>
+			</div>
+		  </div>
+		  <div class="col-12 col-md-6 mt-5 m-md-auto text-center imageBorder">
+			<img src="./assets/images/aboutUs.jpeg" alt="" class="">
+			<div class="roundedBorderAbove"></div>
+		  </div>
+		</div>
+	</div>
+	<!-- end of about us -->
+	<!-- features1 -->
+	<div class="container-fluid my-5" id="features">
+		<h5 class="text-center mb-2">Features</h5>
+		<h1 class="text-center heading centerHeading">Be on the same page</h1>
+		<div class="row mx-auto">
+			<div class="featuresCard col-12 col-md-4">
+				<i class="fas fa-list-ul featuresIcon"></i>
+				<div class="card-body text-center">
+				<h5 class="card-title">Stay Organised</h5>
+				<p class="card-text">It is a long established fact that a reader will be distracted by the</p>
+				</div>
+			</div>
+			<!-- second card -->
+			<div class="featuresCard col-12 col-md-4">
+				<i class="fas fa-snowboarding featuresIcon"></i>
+				<div class="card-body text-center">
+				<h5 class="card-title">Be more productive</h5>
+				<p class="card-text">It is a long established fact that a reader will be distracted by the</p>
+				</div>
+			</div>
+			<!-- third card -->
+			<div class="featuresCard col-12 col-md-4">
+				<i class="far fa-handshake featuresIcon"></i>
+				<div class="card-body text-center">
+				<h5 class="card-title">Collaborate</h5>
+				<p class="card-text">It is a long established fact that a reader will be distracted by the</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of features1 -->
+	<!-- features2 -->
+	<div class="container-fluid my-5">
+		<div class="row  mx-auto">
+			<div class="col-12 col-md-6 m-md-auto text-center imageBorder">
+				<div class="roundedBorderBelow"></div>
+				<img src="./assets/images/aboutUs.jpeg" alt="" class="">
+			</div>
+		  <div class="col-12 col-md-6 mx-auto mt-5 mt-md-0" style="padding: 0 50px;">
+			<h1 class="text-center text-md-left pt-5 pt-md-0 heading">Add structure to your daily tasks</h1>
+			<h3 class="lead">To do lists</h3>
+			<p class="text-justify para">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+			</p>
+			<h3 class="lead">Track your meeetings</h3>
+			<p class="text-justify para">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+			</p>
+		  </div>
+		</div>
+	</div>
+	<!-- end of features2 -->
+	<!-- dashboard -->
+	<div class="container-fluid my-5 dashboard py-5" id="dashboard">
+		<h5 class="text-center mb-2">Dashboard</h5>
+		<h1 class="text-center heading">Everything works better when it looks better</h1>
+		<div class="text-center">
+			<img src="./assets/images/dashoboard10.png" class="text-center col-8 col-md-6" alt="Responsive image">
+		</div>
+		<p class="para text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+		</p>
+	</div>
+	<!-- end of dashboard -->
+	<!-- reviews -->
+	<div class="container-fluid my-5" id="reviews">
+		<h5 class="text-center mb-2">Reviews</h5>
+		<h1 class="text-center headingReviews mb-4">A few words from our <span class="heading">amazing</span> and trusting customers</h1>
+		<div class="row row-cols-1 row-cols-md-4 px-5 d-flex justify-content-center">
+			<div class="col mb-4 text-center w-25">
+				<div class="shadow card pb-4 cardReview">
+					<div class="card-body">
+						<p class="card-text p-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established</p>
+					</div>
+					<img src="./assets/images/person1.jpeg" class="card-img-bottom rounded-circle w-25 w-md-50 mx-auto" alt="...">
+					<h5 class="card-title">Suzzy Huller</h5>
+					<h6 class="card-subtitle mb-2 text-muted">Illustartor</h6>
+				</div>
+			</div>
+			<div class="col mb-4 text-center w-25">
+				<div class="shadow card pb-4 cardReview">
+					<div class="card-body">
+						<p class="card-text p-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established</p>
+					</div>
+					<img src="./assets/images/person1.jpeg" class="card-img-bottom rounded-circle w-25 w-md-50 mx-auto" alt="...">
+					<h5 class="card-title">Suzzy Huller</h5>
+					<h6 class="card-subtitle mb-2 text-muted">Illustartor</h6>
+					</div>
+			</div>
+			<div class="col mb-4 text-center w-25">
+			<div class="shadow card pb-4 cardReview">
+				<div class="card-body">
+					<p class="card-text p-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established</p>
+				</div>
+				<img src="./assets/images/person1.jpeg" class="card-img-bottom rounded-circle w-25 w-md-50 mx-auto" alt="...">
+				<h5 class="card-title">Suzzy Huller</h5>
+				<h6 class="card-subtitle mb-2 text-muted">Illustartor</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of reviews -->
+	<!-- signUp -->
+	<div class="container-fluid">
+		<div class="row signUpBar justify-content-around align-items-center py-3">
+			<div class="">
+				<h2 class="text-center" style="color: #fff;">Did you want to be notified when we launch?</h2>
+			</div>
+			<div class="">
+				<button type="button" class="btn rounded-pill learnMoreButton lead">Learn More</button>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid py-5 text-light signUpForm" id="signUp">
+		<div class="row mx-auto px-3">
+		  <div class="col-12 col-md-6 p-0 p-md-5 mx-auto" style="padding: 0 0px;">
+			<h1 class="text-md-left">Get creative with this revolutionary tool</h1>
+			<p class="para">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+			</p>
+		  </div>
+		  <div class="col-12 col-md-6 mt-5 p-0 p-md-5 m-md-auto imageBorder">
+			<form>
+				<div class="form-group">
+					<h6  >NAME<span class="color">*</span></h6>
+					<input type="text" class="form-control rounded-lg inputUserDetails" id="inputUserDetails" >
+				</div>
+				<div class="form-group">
+					<h6 >EMAIL ADDRESS<span class="color">*</span></h6>
+					<input type="email" class="form-control rounded-lg inputUserDetails" id="exampleInputEmail1">
+				</div>
+				<div class="form-group">
+					<h6>Message</h6>
+					<textarea class="form-control rounded-lg inputUserDetails" aria-label="With textarea"></textarea>
+				</div>
+				<button type="button" class="signUpButton btn btn-lg btn-block text-white">SUBMIT</button>
+			</form>
+		  </div>
+		</div>
+	</div>
+	<!-- end of signUp -->
+	<!-- footer -->
+	<div class="container-fluid py-3 px-4">
+		<div class="row align-items-center">
+			<div class="col-12 col-md-3 text-center">
+				<i class="p-2 bg-dark text-white rounded-pill m-1 fab fa-facebook-f"></i>
+				<i class="p-2 bg-dark text-white rounded-pill m-1 fab fa-instagram"></i>
+				<i class="p-2 bg-dark text-white rounded-pill m-1 fab fa-youtube"></i>
+			</div>
+			<div class="col-12 col-md-2 text-center color">
+				<h1>Oslo</h1>
+			</div>
+			<div class="col-12 col-md-7 justify-content-center text-center text-md-right">
+				<a class="text-dark text-decoration-none px-1 px-md-3"  href="#aboutUs">ABOUT US</a>
+				<a class="text-dark text-decoration-none px-1 px-md-3"  href="#features">FEATURES</a>
+				<!-- <a class="text-dark text-decoration-none px-1 px-md-3"  href="#">DASHBOARD</a> -->
+				<a class="text-dark text-decoration-none px-1 px-md-3"  href="#">REVIEWS</a>
+			</div>
+		</div>
+	</div>
+	<!-- end of footer -->
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</html>	
