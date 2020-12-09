@@ -41,13 +41,31 @@ leftBtn.addEventListener('click', () => {
         showBanner(index);
         foo(index+2);
     }
-    // if(index!==array.length) {
-    //     showBanner(index);
-    //     index--;
-    // } else if (index===0) {
-    //     console.log('hello');
-    //     foo(index);
-    //     index=3;
-    //     showBanner(index);
-    // }
 })
+function removeActiveAddInactive(array) {
+    array.forEach(element => {
+        element.classList.remove(".active")
+        element.classList.add(".inactive")
+    });
+}
+function addActiveRemoveInactive(array, index) {
+    showBanner(index)
+}
+function displayBanner(circle, index){
+    // console.log(array[i].firstChild);
+    // array[index].firstChild.classList.add("active");
+    // array[index].firstChild.classList.remove("inactive");
+    const array = [ ...circle ];
+
+    var copyArray = array.slice();
+    copyArray.splice(index, 1)
+    addActiveRemoveInactive(circle, index);
+    removeActiveAddInactive(copyArray);
+}
+let circle = document.querySelectorAll(".circle");
+for(let i=0; i<circle.length; i++) {
+    circle[i].addEventListener('click', () => {
+        // console.log(circle[i]);
+        displayBanner(circle, i);
+    })
+}

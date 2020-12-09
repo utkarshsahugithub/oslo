@@ -59,18 +59,19 @@ body {
     right: 0%;
     margin-right: 20px;
 }
-.firstCircle, .secondCircle, .thirdCircle{
+#firstCircle, #secondCircle, #thirdCircle{
 	position: absolute;
 	bottom: 10%;
 	font-size: 1rem;
+	cursor: pointer;
 }
-.firstCircle{
+#firstCircle{
    left: 45%;
 }
-.secondCircle {
+#secondCircle {
 	left: 50%;
 }
-.thirdCircle {
+#thirdCircle {
 	left: 55%;
 }
 .container {
