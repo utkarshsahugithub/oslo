@@ -31,13 +31,23 @@ rightBtn.addEventListener('click', () => {
 
 let leftBtn = document.querySelector('.left');
 leftBtn.addEventListener('click', () => {
-    if(index!==array.length) {
-        showBanner(index);
-        index--;
-    } else if (index===0) {
-        console.log('hello');
-        foo(index);
-        index=3;
-        showBanner(index);
+     index--;
+     if(index<0){
+        showBanner(array.length-1);    
+        foo(1);
+        index=2;
     }
+    else{
+        showBanner(index);
+        foo(index+2);
+    }
+    // if(index!==array.length) {
+    //     showBanner(index);
+    //     index--;
+    // } else if (index===0) {
+    //     console.log('hello');
+    //     foo(index);
+    //     index=3;
+    //     showBanner(index);
+    // }
 })
