@@ -38,4 +38,16 @@ $(document).ready(function() {
             $("#slide"+[i+1]).children().addClass("active").removeClass("inactive");
         })
     }
+
+    setInterval(() => {
+        if(index<2) {
+            $(".slide").children().removeClass("active").addClass("inactive");
+            $("#slide"+[index+1]).children().addClass("active").removeClass("inactive");
+            index++;
+        } else {
+            $(".slide").children().removeClass("active").addClass("inactive");
+            $("#slide"+[index+1]).children().addClass("active").removeClass("inactive");
+            index=0;
+        }
+    }, 2000);
 })

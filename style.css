@@ -38,7 +38,7 @@ body {
 .carousel img {
 	width: 100%;
 	z-index: 1;
-	height: 75vh;
+	height: 80vh;
 }
 .arrowBlock {
 	color: #fff;
@@ -179,7 +179,9 @@ textarea:focus  {
 }
 .active {
 	display: block;
+	animation: showBanner 2s linear 1 normal ;
 }
 .inactive {
 	display: none;
+	animation: hideBanner 2s linear 1 normal ;
 }
