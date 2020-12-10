@@ -20,8 +20,8 @@ let rightBtn = document.querySelector('.right');
 rightBtn.addEventListener('click', () => {
     index++;
     if(index<array.length) {
-        showBanner(index);
-        
+        // showBanner(index);
+        displayBanner(array, index);
     } else if (index===array.length) {
         index=0;
         showBanner(index);
@@ -42,25 +42,19 @@ leftBtn.addEventListener('click', () => {
         foo(index+2);
     }
 })
-function removeActiveAddInactive(array) {
-    array.forEach(element => {
-        element.classList.remove(".active")
-        element.classList.add(".inactive")
-    });
-}
-function addActiveRemoveInactive(array, index) {
-    showBanner(index)
-}
-function displayBanner(circle, index){
-    // console.log(array[i].firstChild);
-    // array[index].firstChild.classList.add("active");
-    // array[index].firstChild.classList.remove("inactive");
-    const array = [ ...circle ];
 
-    var copyArray = array.slice();
-    copyArray.splice(index, 1)
-    addActiveRemoveInactive(circle, index);
-    removeActiveAddInactive(copyArray);
+function displayBanner(a, index){
+    for (let i = 0; i < a.length; i++) {
+        const element = array[index];
+        // console.log(element);
+        if(i!==index){
+            array[i].firstChild.classList.remove("active");
+            array[i].firstChild.classList.add("inactive");
+        } else {
+            array[i].firstChild.classList.add("active");
+            array[i].firstChild.classList.remove("inactive");
+        }
+    }
 }
 let circle = document.querySelectorAll(".circle");
 for(let i=0; i<circle.length; i++) {

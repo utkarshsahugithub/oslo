@@ -1,26 +1,41 @@
 $(document).ready(function() {
-    $('.carousel img').not(".active").hide();
-    // $(".slide").each(function(index, element) {
-    //     // $(this).find('img').show();
-    //     setTimeout(() => {  
-    //         console.log(index + ": " + $(this).html());
-    //     }, 5000);
-    // })
-    function foo(time, element) {
-        setTimeout(() => {
-            $(element).addClass(".active");
-            element = $(element).next();
-            console.log(element);
-        }, time);
-        time += 1000;
-        foo(time, element)
-    }
-
-    var array = $(".slide").toArray();
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        var time = 1000;
-        foo(time, element);
-        // console.log(element);
+    var array = $(".slide");
+    let rightBtn = $(".right");
+    let leftBtn = $('.left');
+    let circle = $(".circle");
+    let index = 0;
+    
+    rightBtn.on('click', () => {
+        index++;
+        if(index<array.length) {
+            $(".slide").children().removeClass("active").addClass("inactive");
+            $("#slide"+[index+1]).children().addClass("active").removeClass("inactive");
+        } else if (index===array.length) {
+            index=0;
+            $(".slide").children().removeClass("active").addClass("inactive");
+            $("#slide"+[index+1]).children().addClass("active").removeClass("inactive");
+        }
+    })
+    leftBtn.on('click', () => {
+        index--;
+        if(index<0){
+            // console.log(index);
+            $(".slide").children().removeClass("active").addClass("inactive");
+            $("#slide"+[array.length]).children().addClass("active").removeClass("inactive");
+            index=2;
+        }
+        else {
+            // console.log(index);
+            $(".slide").children().removeClass("active").addClass("inactive");
+            $("#slide"+[index+1]).children().addClass("active").removeClass("inactive");
+        }
+    })
+    for(let i=0; i<circle.length; i++) {
+        $(circle[i]).on('click', () => {
+            // console.log(circle[i]);
+            // console.log($("#slide"+[i+1]));
+            $(".slide").children().removeClass("active").addClass("inactive");
+            $("#slide"+[i+1]).children().addClass("active").removeClass("inactive");
+        })
     }
 })
