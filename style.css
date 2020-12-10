@@ -52,12 +52,12 @@ body {
 .arrowBlock .left{
 	position: absolute;
     left: 0%;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 .arrowBlock .right {
 	position: absolute;
     right: 0%;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 #firstCircle, #secondCircle, #thirdCircle{
 	position: absolute;
@@ -73,6 +73,9 @@ body {
 }
 #thirdCircle {
 	left: 55%;
+}
+.circleColor {
+	/* color: var(--primaryColor); */
 }
 .container {
 	position: absolute;
