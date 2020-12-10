@@ -46,8 +46,6 @@ $(document).ready(function() {
     
     for(let i=0; i<circle.length; i++) {
         $(circle[i]).on('click', () => {
-            // console.log(circle[i]);
-            // console.log($("#slide"+[i+1]));
             clearInterval(timingVariable);
             timingVariable = null;
             $(".slide").children().removeClass("active").addClass("inactive");
@@ -69,7 +67,7 @@ $(document).ready(function() {
                 changeDotColor(index);
                 index=0;
             }
-        }, 2000);
+        }, 3000);
     }
     timingFunction();
 })

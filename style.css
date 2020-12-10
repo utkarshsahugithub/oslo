@@ -180,11 +180,19 @@ textarea:focus  {
 .inputUserDetails {
 	background: rgb(217, 217, 217);
 }
+.atOnceShow {
+	display: none;
+}
 .active {
 	display: block;
-	animation: showBanner 2s linear 1 normal ;
+	/* animation: showBanner 2s linear 1 normal ; */
 }
 .inactive {
 	display: none;
-	animation: hideBanner 2s linear 1 normal ;
+	/* animation: hideBanner 2s linear 1 normal ; */
+}
+@keyframes showBanner {
+	0%   {top:0px;}
+	/* 50% {left:1366px;} */
+	100% {top:180px;}
 }
